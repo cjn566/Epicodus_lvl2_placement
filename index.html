@@ -32,11 +32,11 @@
 				</ol>
 				<div ng-controller="pingPongController">
 					<form id="ping-pong-form">
-						<label for="some-input">Enter your number here:</label>
-						<input id="pingpong-input" type="number">	
+						<label for="pingpong-input">Enter your number here:</label>
+						<input id="pingpong-input" type="number" min="1" required>	
 						<button type="submit" class="btn">Submit!</button>
 					</form>
-					<ul>
+					<ul id="results">
 					</ul>
 				</div>
 			</div>

@@ -1,5 +1,6 @@
-//$(document).ready(function() {
+$(document).ready(function() {
 	
+	// Number replacement logic
 	var ping_pong = function(number){
 		if(number%15==0){
 			return "pingpong";
@@ -13,20 +14,21 @@
 		else return number;
 	}
 	
-	var input = 0;
-	var output = ["bork"];
-    var doPingPong = function(){};
+	// Submitting number for ping pong repopulates results list.
 	$("form#ping-pong-form").submit(function(event){
 		var pp_input = $("input#pingpong-input").val();
 		
-		var list = $('#details');
-		for (var i = 0; i < 10; i++) {
-			list.append('<li>something</li>');
+		// Grab the UL, empty the current contents, and store in local var
+		var list = $('#results').empty();
+		
+		// Populate the UL
+		for (var i = 1; i <= pp_input; i++) {
+			list.append('<li>' + ping_pong(i) + '</li>');
 		}
-	});
-	
-//});
-
+		
+		event.preventDefault();
+	});	
+});
 
 
 
