@@ -9,35 +9,37 @@
 	</head>
 	<body ng-app="pingPong">
 		<header>
-			<h1 class="main_header">Ping-Pong</h1>
+			<h1>Ping-Pong</h1>
 		</header>
-		<div class="group">
-			<div class="sidebar">
-				<h3>About Ping-Pong</h3>
-				<h4>Created By:</h4>
-				<p>Colten Nye</p>
-				<h4>Github Username/URL:</h4>
-				<a href="https://github.com/cjn566/Epicodus_lvl2_placement">cjn566</a>
-				<h4>Level 2 Test for:</h4>
-				<p>Java</p>
-			</div>
-			<div class="main_content">
-				<h2>Let's play!</h2>
-				<h2>Rules:</h2>
-				<p>Ping Pong will count up to your number from 1 with the following exceptions:</p>
-				<ol>
-					<li>Numbers divisible by 3 become "ping"</li>
-					<li>Numbers divisible by 5 become "pong"</li>
-					<li>Numbers divisible by 3 and 5 become "pingpong"</li>
-				</ol>
-				<div>
-					<form id="ping_pong_form">
-						<label for="pingpong_input">Enter your number here:</label>
-						<input id="pingpong_input" type="number" min="1" required>	
-						<button type="submit" class="btn">Submit!</button>
-					</form>
-					<ul id="results">
-					</ul>
+		<div class="container">
+			<div class="row">
+				<div class="sidebar col-xs-3">
+					<h3>About Ping-Pong</h3>
+					<h4>Created By:</h4>
+					<p>Colten Nye</p>
+					<h4>Github Username/URL:</h4>
+					<a href="https://github.com/cjn566/Epicodus_lvl2_placement">cjn566</a>
+					<h4>Level 2 Test for:</h4>
+					<p>Java</p>
+				</div>
+				<div class="main_content col-xs-9">
+					<h2>Let's play!</h2>
+					<h2>Rules:</h2>
+					<p>Ping Pong will count up to your number from 1 with the following exceptions:</p>
+					<ol>
+						<li>Numbers divisible by 3 become "ping"</li>
+						<li>Numbers divisible by 5 become "pong"</li>
+						<li>Numbers divisible by 3 and 5 become "pingpong"</li>
+					</ol>
+					<div>
+						<form id="ping_pong_form">
+							<label for="pingpong_input">Enter your number here:</label>
+							<input id="pingpong_input" type="number" min="1" required>	
+							<button type="submit" class="btn">Submit!</button>
+						</form>
+						<ul id="results">
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
